@@ -1,12 +1,19 @@
 import React from "react"
 import { css } from "@emotion/core"
 
+import placeIcon from "./round-place.svg"
+import directionsIcon from "./round-directions_run.svg"
+
+const section = css`
+  padding: 32px 0 48px;
+`
+
 const sectionHeader = css`
   font-size: 32px;
   position: relative;
   text-align: center;
   /* TODO: このmarginはsectionのpaddingと分割する */
-  margin-top: 60px;
+  margin-top: 16px;
   font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
     "Hiragino Mincho Pro", HGS明朝E;
   font-weight: 400;
@@ -36,44 +43,42 @@ const paragraph = css`
   margin: 32px auto;
   line-height: 1.8;
   color: #444;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 const About = () => (
-  <section>
-    <h2 css={sectionHeader} data-text="ABOUT">
-      技書博とは
-    </h2>
-    <p css={paragraph}>
-      「GatsbyJSで作るモダンウェブサイト」と「netlifyで始めるサーバーレス開発」という本を自分のサークルで頒布、別サークルで合同誌を書きました。
-      技術書執筆にはRe:VIEW（Tex1を人間向きにした組版ツール）がいいと聞いていたので採用することは決めていました。
-      <br />
-      ただ、Re:VIEW記法に慣れることが出来ず、最初はMarkdownで執筆を行っていました。
-      しかし、技術書となるとMarkdownの記法だけでは表現力が弱く、執筆序盤でRe:VIEWに移行しました。
-      <br />
-      図表番号の参照や、画面のキャプションなど技術書らしさを出すための記法が揃っているので、最初からRe:VIEWを使うべきでした。
-    </p>
-    {/* <p
-      css={css`
-        font-family: "Times New Roman", Times, serif;
-        color: #2b5773;
-        opacity: 0.1;
-        font-size: 76px;
-      `}
-    >
-      ABOUT
-    </p> */}
+  <>
+    <section css={section}>
+      <h2 css={sectionHeader} data-text="ABOUT">
+        技書博とは
+      </h2>
+      <p css={paragraph}>
+        「GatsbyJSで作るモダンウェブサイト」と「netlifyで始めるサーバーレス開発」という本を自分のサークルで頒布、別サークルで合同誌を書きました。
+        技術書執筆にはRe:VIEW（Tex1を人間向きにした組版ツール）がいいと聞いていたので採用することは決めていました。
+        <br />
+        ただ、Re:VIEW記法に慣れることが出来ず、最初はMarkdownで執筆を行っていました。
+        しかし、技術書となるとMarkdownの記法だけでは表現力が弱く、執筆序盤でRe:VIEWに移行しました。
+        <br />
+        図表番号の参照や、画面のキャプションなど技術書らしさを出すための記法が揃っているので、最初からRe:VIEWを使うべきでした。
+      </p>
+    </section>
     <section
-      css={css`
+      css={css(
+        section,
+        `
         background-color: #f7f8fa;
-        padding: 1px 0 32px;
-      `}
+      `
+      )}
     >
       <h2 css={sectionHeader} data-text="ACCESS">
         アクセス
       </h2>
       <div
         css={css`
-          height: 400px;
+          height: 450px;
           margin-top: 32px;
         `}
       >
@@ -89,37 +94,82 @@ const About = () => (
         />
       </div>
       <div css={paragraph}>
-        <p>大田区産業プラザPiO</p>
-        <p>東京都大田区南蒲田1丁目20-20</p>
-        <p>
-          京浜急行「京急蒲田」駅より徒歩約3分
-          <br />
-          JR京浜東北線、東急池上・多摩川線「蒲田」駅より徒歩約13分
+        <p
+          css={css`
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+          `}
+        >
+          大田区産業プラザPiO
         </p>
+        <div
+          css={css`
+            background-color: #fff;
+            padding: 12px;
+            border-radius: 4px;
+            margin-top: 12px;
+          `}
+        >
+          <p
+            css={css`
+              position: relative;
+              padding-left: 30px;
+              margin-top: 4px;
+              img {
+                position: absolute;
+                left: 0;
+                opacity: 0.3;
+              }
+            `}
+          >
+            <img src={placeIcon} />
+            東京都大田区南蒲田1丁目20-20
+          </p>
+          <p
+            css={css`
+              position: relative;
+              padding-left: 30px;
+              margin-top: 4px;
+              img {
+                position: absolute;
+                left: 0;
+                opacity: 0.3;
+              }
+            `}
+          >
+            <img src={directionsIcon} />
+            京浜急行「京急蒲田」駅より徒歩約3分
+            <br />
+            JR京浜東北線、東急池上・多摩川線「蒲田」駅より徒歩約13分
+          </p>
+        </div>
       </div>
     </section>
-    <h2 css={sectionHeader} data-text="ENTRY">
-      参加申し込み
-    </h2>
-    <p css={css(paragraph, `text-align: center;`)}>
-      申し込み規約とサークル参加要項を必ずご覧の上お申し込みください
-    </p>
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLScLGCwyWLVR8_Ks-ZTvurA3BDp4ms1TAem8LIpmQ5WDsvlZqA/viewform?embedded=true"
-      width="640"
-      height="500"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      css={css`
-        height: 500px;
-        margin: 0 auto;
-        display: block;
-      `}
-    >
-      読み込んでいます...
-    </iframe>
-  </section>
+    <section css={section}>
+      <h2 css={sectionHeader} data-text="ENTRY">
+        参加申し込み
+      </h2>
+      <p css={css(paragraph, `text-align: center;`)}>
+        申し込み規約とサークル参加要項を必ずご覧の上お申し込みください
+      </p>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScLGCwyWLVR8_Ks-ZTvurA3BDp4ms1TAem8LIpmQ5WDsvlZqA/viewform?embedded=true"
+        width="640"
+        height="500"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        css={css`
+          height: 500px;
+          margin: 0 auto;
+          display: block;
+        `}
+      >
+        読み込んでいます...
+      </iframe>
+    </section>
+  </>
 )
 
 export default About

@@ -66,14 +66,14 @@ const Hero = () => (
     <h1
       css={css`
         font-weight: bold;
-        font-size: 24px;
+        font-size: 32px;
       `}
     >
       技術好きのための同人誌イベント
     </h1>
     <p
       css={css`
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         margin-top: 8px;
       `}
@@ -93,6 +93,7 @@ const Hero = () => (
         display: inline-block;
         border-radius: 30px;
         margin-top: 24px;
+        text-decoration: none;
       `}
     >
       サークル参加申し込み

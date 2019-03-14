@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core"
 
+import Footer from "./footer"
+
 import "minireset.css"
 
 const Layout = ({ children }) => (
@@ -43,11 +45,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Footer/>
         </div>
       </>
     )}
