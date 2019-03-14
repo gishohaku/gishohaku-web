@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 
 import logo from "../../images/logo.png"
 
-import { media } from "src/utils/style"
+import { media, colors } from "src/utils/style"
 
 // break for smartphone
 const Br4Sm = () => (
@@ -107,7 +107,7 @@ const Hero = () => (
       css={css`
         font-size: 20px;
         font-weight: bold;
-        margin-top: 8px;
+        margin-top: 4px;
         @media ${media.small} {
           font-size: 16px;
         }
@@ -123,7 +123,7 @@ const Hero = () => (
         font-size: 16px;
         font-weight: bold;
         color: white;
-        padding: 12px 36px;
+        padding: 11px 36px 13px;
         min-width: 270px;
         display: inline-block;
         border-radius: 30px;
@@ -133,6 +133,20 @@ const Hero = () => (
     >
       サークル参加申し込み
     </a>
+    <div
+      css={css`
+        background-color: ${colors.accent};
+        display: block;
+        padding: 7px 16px 9px;
+        border-radius: 4px;
+        width: 210px;
+        margin: 12px auto 0;
+        font-size: 14px;
+        font-weight: bold;
+      `}
+    >
+      3/27より参加申し込み開始
+    </div>
   </section>
 )
 

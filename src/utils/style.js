@@ -3,6 +3,7 @@ export const colors = {
   gray900: "#1D272D",
   gray700: "#505A60",
   gray100: "#F7F8FA",
+  accent: "#ECB40D",
 }
 
 const breakpoints = {
