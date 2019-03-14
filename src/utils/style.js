@@ -4,3 +4,12 @@ export const colors = {
   gray700: "#505A60",
   gray100: "#F7F8FA",
 }
+
+const breakpoints = {
+  small: 480,
+  medium: 768,
+}
+
+export const media = {
+  small: `screen and (max-width: ${(breakpoints.small - 1)}px)`,
+};

@@ -3,6 +3,20 @@ import { css } from "@emotion/core"
 
 import logo from "../../images/logo.png"
 
+import { media } from "src/utils/style"
+
+// break for smartphone
+const Br4Sm = () => (
+  <br
+    css={css`
+      display: none;
+      @media ${media.small} {
+        display: inline;
+      }
+    `}
+  />
+)
+
 const Hero = () => (
   <section
     css={css`
@@ -13,7 +27,10 @@ const Hero = () => (
       position: relative;
       color: white;
       text-align: center;
-      padding: 100px 0;
+      padding: 60px 0 100px;
+      @media ${media.small} {
+        padding: 20px 0 60px 0;
+      }
     `}
   >
     <div
@@ -27,7 +44,7 @@ const Hero = () => (
         border-bottom: 0 solid white;
       `}
     />
-    <div
+    {/* <div
       css={css`
         position: absolute;
         right: 0;
@@ -37,7 +54,7 @@ const Hero = () => (
         border-right: 50vw solid white;
         border-top: 0 solid white;
       `}
-    />
+    /> */}
     <div
       css={css`
         position: absolute;
@@ -49,7 +66,7 @@ const Hero = () => (
         border-bottom: 0 solid white;
       `}
     />
-    <div
+    {/* <div
       css={css`
         position: absolute;
         left: 0;
@@ -59,23 +76,41 @@ const Hero = () => (
         border-left: 50vw solid white;
         border-top: 0 solid white;
       `}
-    />
-    <div style={{ maxWidth: `300px`, height: 300, margin: `0 auto` }}>
+    /> */}
+    <div
+      css={css`
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        @media ${media.small} {
+          width: 260px;
+          height: 260px;
+        }
+      `}
+    >
       <img src={logo} alt="技術書同人誌博覧会" />
     </div>
     <h1
       css={css`
         font-weight: bold;
         font-size: 32px;
+        @media ${media.small} {
+          font-size: 28px;
+        }
       `}
     >
-      技術好きのための同人誌イベント
+      技術好きのための
+      <Br4Sm />
+      同人誌イベント
     </h1>
     <p
       css={css`
         font-size: 20px;
         font-weight: bold;
         margin-top: 8px;
+        @media ${media.small} {
+          font-size: 16px;
+        }
       `}
     >
       2019.07.27(Sat.) 10:00 <br />
