@@ -62,7 +62,7 @@ const paragraphBlock = css`
   }
 `
 
-const About = () => (
+const Sections = () => (
   <>
     <section css={section}>
       <h2 css={sectionHeader} data-text="ABOUT">
@@ -204,4 +204,4 @@ const About = () => (
   </>
 )
 
-export default About
+export default Sections
