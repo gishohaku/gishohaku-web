@@ -10,11 +10,12 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core"
 
+import Header from "./header"
 import Footer from "./footer"
 
 import "minireset.css"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, hideHeader }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -44,6 +45,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          { !hideHeader && <Header/> }
           <main>{children}</main>
           <Footer/>
         </div>
