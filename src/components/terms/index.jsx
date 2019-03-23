@@ -13,7 +13,7 @@ const section = css`
 
 const Top = () => (
   <Layout>
-    <SEO title="Home" keywords={[`同人誌即売会`, `技術同人誌`, `技書博`]} />
+    <SEO title="利用規約" keywords={[`同人誌即売会`, `技術同人誌`, `技書博`]} />
     <section css={section}>
       <SectionHeader text="TERMS">サークル参加規約</SectionHeader>
       <TextBlock>
