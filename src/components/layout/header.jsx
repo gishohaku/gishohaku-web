@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
-import { colors } from "src/utils/style"
-
 import logo from "../../images/logo.png"
 
 const Header = () => (
@@ -18,7 +16,7 @@ const Header = () => (
     `}
   >
     <Link to='/'>
-      <img src={logo} width={80}/>
+      <img src={logo} width={80} alt="技術書同人誌博覧会"/>
     </Link>
   </header>
 )
