@@ -10,6 +10,7 @@ import TextBlock from "../atoms/TextBlock"
 
 const section = css`
   padding: 32px 0 48px;
+  background-color: white;
 `
 
 const withIcon = css`
