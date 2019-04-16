@@ -1,7 +1,6 @@
 ---
 title: プライバシーポリシー
 subtitle: privacy policy
-path: privacy
 ---
 
 「GatsbyJS で作るモダンウェブサイト」と「netlify で始めるサーバーレス開発」という本を自分のサークルで頒布、別サークルで合同誌を書きました。
