@@ -145,7 +145,7 @@ const Hero = () => {
         @大田区産業プラザPiO
       </p>
       <a
-        href="/"
+        href="#"
         css={css`
           background-color: #aaaaaa;
           font-size: 16px;
@@ -161,20 +161,6 @@ const Hero = () => {
       >
         サークル参加申し込み
       </a>
-      <div
-        css={css`
-          background-color: ${colors.accent};
-          display: block;
-          padding: 7px 16px 9px;
-          border-radius: 4px;
-          width: 210px;
-          margin: 12px auto 0;
-          font-size: 14px;
-          font-weight: bold;
-        `}
-      >
-        3/27より参加申し込み開始
-      </div>
     </section>
   )
 }
