@@ -9,8 +9,8 @@ export default ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query markdownPageByPath($pagePath: String!) {
-    markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
+  query markdownPageByPath($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       html
