@@ -3,6 +3,7 @@ module.exports = {
     title: `技術書同人誌博覧会`,
     description: `2019年7月27日に大田区で開催予定の新しい技術系同人誌即売会です。`,
     author: `@engineers_lt`,
+    image: `/ogp.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -19,13 +19,16 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            image
           }
         }
       }
     `
   )
 
-  const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
+  const metaTitle = title
+    ? `${title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -52,8 +55,12 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: "og:image",
+          content: `https://gishohaku.dev${site.siteMetadata.image}`,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
