@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             description
             author
             image
+            siteUrl
           }
         }
       }
@@ -56,7 +57,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: "og:image",
-          content: `https://gishohaku.dev${site.siteMetadata.image}`,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
         },
         {
           name: `twitter:card`,
