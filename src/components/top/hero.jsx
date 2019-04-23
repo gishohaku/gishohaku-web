@@ -147,7 +147,7 @@ const Hero = () => {
         @大田区産業プラザPiO
       </p>
       <a
-        href="#"
+        href="#entry"
         css={css`
           background-color: ${colors.accent};
           font-size: 16px;
@@ -159,6 +159,12 @@ const Hero = () => {
           border-radius: 30px;
           margin-top: 24px;
           text-decoration: none;
+          transition: transform 0.15s ease-out;
+          transform: translateY(0);
+          &:hover {
+            transform: translateY(-1px);
+            background-color: #dbae29;
+          }
         `}
       >
         サークル参加申し込み

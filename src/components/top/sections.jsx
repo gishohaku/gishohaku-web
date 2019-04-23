@@ -103,7 +103,7 @@ const Sections = () => (
         </div>
       </TextBlock>
     </section>
-    <section css={section}>
+    <section id="entry" css={section}>
       <SectionHeader text="ENTRY">サークル参加申し込み</SectionHeader>
       <TextBlock>
         <p
