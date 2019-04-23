@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `技術書同人誌博覧会`,
-    description: `2019年7月27日に大田区で開催予定の新しい技術系同人誌即売会です。`,
+    description: `あなたが最も得意とする技術、最も世界中に広めたい技術を、『技術書』という形で共有しませんか？ 技書博は、ITエンジニアが知見を共有するために開催される、技術書オンリーイベントです。`,
     author: `@engineers_lt`,
     image: `/ogp.jpg`,
   },

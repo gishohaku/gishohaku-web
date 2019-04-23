@@ -34,7 +34,8 @@ const ParallaxBackground = () => {
   return (
     <div
       css={css`
-        background-image: url(https://img.esa.io/uploads/production/attachments/6967/2019/03/14/4651/30015db4-c726-49d1-9e1b-541a2307db50.jpg);
+        /* background-image: url(https://img.esa.io/uploads/production/attachments/6967/2019/03/14/4651/30015db4-c726-49d1-9e1b-541a2307db50.jpg); */
+        background-image: url(https://img.esa.io/uploads/production/attachments/6967/2019/04/23/4651/ff4a2723-1e2c-45b2-87ff-9d5f91c75df0.jpg);
         background-size: cover;
         background-position: center center;
         position: absolute;
