@@ -32,7 +32,7 @@ const Footer = () => (
         </a>
       </li>
       <li>
-        <a href="/">お問い合わせ</a>
+        <a href="mailto:gishohaku@engineers-lt.info">お問い合わせ</a>
       </li>
     </ul>
     <p
