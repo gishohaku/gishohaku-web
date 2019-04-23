@@ -13,10 +13,19 @@ const Header = () => (
       font-size: 12px;
       padding: 0 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      min-height: 80px;
     `}
   >
-    <Link to='/'>
-      <img src={logo} width={80} alt="技術書同人誌博覧会"/>
+    <Link to="/">
+      <img
+        src={logo}
+        width={80}
+        height={80}
+        css={css`
+          display: block;
+        `}
+        alt="技術書同人誌博覧会"
+      />
     </Link>
   </header>
 )

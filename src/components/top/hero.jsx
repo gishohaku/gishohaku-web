@@ -31,20 +31,22 @@ const ParallaxBackground = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  return <div
-    css={css`
-      background-image: url(https://img.esa.io/uploads/production/attachments/6967/2019/03/14/4651/30015db4-c726-49d1-9e1b-541a2307db50.jpg);
-      background-size: cover;
-      background-position: center center;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: -120px;
-      left: 0;
-      z-index: -1;
-    `}
-    style={{ transform: `translateY(${translateY}px)`}}
-  />
+  return (
+    <div
+      css={css`
+        background-image: url(https://img.esa.io/uploads/production/attachments/6967/2019/03/14/4651/30015db4-c726-49d1-9e1b-541a2307db50.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -120px;
+        left: 0;
+        z-index: -1;
+      `}
+      style={{ transform: `translateY(${translateY}px)` }}
+    />
+  )
 }
 
 const Hero = () => {
@@ -60,7 +62,7 @@ const Hero = () => {
         }
       `}
     >
-      <ParallaxBackground/>
+      <ParallaxBackground />
       <div
         css={css`
           position: absolute;
@@ -145,9 +147,9 @@ const Hero = () => {
         @大田区産業プラザPiO
       </p>
       <a
-        href="#"
+        href="#entry"
         css={css`
-          background-color: #aaaaaa;
+          background-color: ${colors.accent};
           font-size: 16px;
           font-weight: bold;
           color: white;
@@ -157,6 +159,12 @@ const Hero = () => {
           border-radius: 30px;
           margin-top: 24px;
           text-decoration: none;
+          transition: transform 0.15s ease-out;
+          transform: translateY(0);
+          &:hover {
+            transform: translateY(-1px);
+            background-color: #dbae29;
+          }
         `}
       >
         サークル参加申し込み

@@ -24,10 +24,12 @@ const Footer = () => (
       `}
     >
       <li>
-        <a href="/">運営</a>
+        <a href="https://portal.engineers-lt.info/">運営</a>
       </li>
       <li>
-        <a href="/">コミュニティ・ガイドライン</a>
+        <a href="https://portal.engineers-lt.info/guideline">
+          コミュニティ・ガイドライン
+        </a>
       </li>
       <li>
         <a href="/">お問い合わせ</a>

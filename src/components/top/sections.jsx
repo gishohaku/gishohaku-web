@@ -103,7 +103,7 @@ const Sections = () => (
         </div>
       </TextBlock>
     </section>
-    <section css={section}>
+    <section id="entry" css={section}>
       <SectionHeader text="ENTRY">サークル参加申し込み</SectionHeader>
       <TextBlock>
         <p
@@ -114,13 +114,13 @@ const Sections = () => (
             }
           `}
         >
-          <a href="/terms">サークル参加規約</a>を必ずご覧のうえ、お申し込みください。
+          <a href="/terms">サークル参加規約</a>
+          を必ずご覧のうえ、お申し込みください。
         </p>
       </TextBlock>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScvx2_Y6tWgZ2zpV_wGuMBRHMLlCRLoVWJyr6Fc0FO9aS0rpw/viewform?embedded=true"
         width="640"
-        height="500"
         frameBorder="0"
         marginHeight="0"
         marginWidth="0"
