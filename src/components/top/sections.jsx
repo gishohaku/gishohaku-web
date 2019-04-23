@@ -104,7 +104,7 @@ const Sections = () => (
       </TextBlock>
     </section>
     <section css={section}>
-      <SectionHeader text="ENTRY">参加申し込み</SectionHeader>
+      <SectionHeader text="ENTRY">サークル参加申し込み</SectionHeader>
       <TextBlock>
         <p
           css={css`
@@ -114,7 +114,7 @@ const Sections = () => (
             }
           `}
         >
-          申し込み規約とサークル参加要項を必ずご覧の上お申し込みください
+          <a href="/terms">サークル参加規約</a>を必ずご覧のうえ、お申し込みください。
         </p>
       </TextBlock>
       <iframe
