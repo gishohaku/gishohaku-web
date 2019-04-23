@@ -103,26 +103,6 @@ const Sections = () => (
         </div>
       </TextBlock>
     </section>
-    <section
-      css={css(
-        section,
-        `
-        background-color: #f7f8fa;
-      `
-      )}
-    >
-      <SectionHeader text="TERMSS">申込規約</SectionHeader>
-      <div
-        css={css`
-          height: 450px;
-          margin-top: 32px;
-        `}
-      >
-      <TextBlock>
-        <pre>
-        </pre>
-      </TextBlock>
-    </section>
     <section css={section}>
       <SectionHeader text="ENTRY">参加申し込み</SectionHeader>
       <TextBlock>
@@ -138,7 +118,7 @@ const Sections = () => (
         </p>
       </TextBlock>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScLGCwyWLVR8_Ks-ZTvurA3BDp4ms1TAem8LIpmQ5WDsvlZqA/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScvx2_Y6tWgZ2zpV_wGuMBRHMLlCRLoVWJyr6Fc0FO9aS0rpw/viewform?embedded=true"
         width="640"
         height="500"
         frameBorder="0"
