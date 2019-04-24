@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { css } from "@emotion/core"
+import {Link} from 'gatsby'
 
 import logo from "../../images/logo.png"
 
@@ -147,8 +148,9 @@ const Hero = () => {
         2019.07.27(Sat.) 10:00 <br />
         @大田区産業プラザPiO
       </p>
-      <a
-        href="#entry"
+      <Link
+        to="/circles"
+        // href="#entry"
         css={css`
           background-color: ${colors.accent};
           font-size: 16px;
@@ -166,14 +168,14 @@ const Hero = () => {
             transform: translateY(-1px);
             background-color: #dbae29;
           }
-          background-color: #aaaaaa;
-          &:hover {
-            background-color: #aaaaaa;
-          }
+          // background-color: #aaaaaa;
+          // &:hover {
+          //   background-color: #aaaaaa;
+          // }
         `}
       >
-        サークル募集は締め切りました
-      </a>
+        サークルリスト
+      </Link>
     </section>
   )
 }
