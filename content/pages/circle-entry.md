@@ -15,16 +15,29 @@ subtitle: ENTRY
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_s-xclick">
     <input type="hidden" name="hosted_button_id" value="V3QFKMH7S45ZQ">
-    <table>
-    <tr><td><input type="hidden" name="on0" value="出展種別">出展種別</td></tr><tr><td><select name="os0">
-        <option value="通常プラン">通常プラン ¥3,000 JPY</option>
-        <option value="倍量プラン">倍量プラン ¥6,000 JPY</option>
-    </select><small>※事前申し込み時のプランを必ずご選択ください<br>※本フォームからの参加プラン変更は受け付けられません</small></td></tr>
-    <tr><td><input type="hidden" name="on1" value="申込時のメールアドレス">申込時のメールアドレス</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-    </table>
-    <input type="hidden" name="currency_code" value="JPY">
-    <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
-    <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+    <p>
+    <h4>出展種別</h4>
+        事前申し込み時のプランをご選択ください。<br>
+        <input type="hidden" name="on0" value="出展種別">
+        <select name="os0">
+            <option value="通常プラン">通常プラン ¥3,000 JPY</option>
+            <option value="倍量プラン">倍量プラン ¥6,000 JPY</option>
+        </select><br>
+        <small>
+            ※本フォームからの参加プラン変更は受け付けられません<br>
+        </small>
+    </p>
+    <p>
+        <h4>メールアドレス</h4>
+        <input type="hidden" name="on1" value="申込時のメールアドレス">
+        申込時のメールアドレスを入力してください。<br>
+        <input type="text" name="os1" maxlength="200"><br>
+        <input type="hidden" name="currency_code" value="JPY">
+    </p>
+    <p>
+        <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+        <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+    </p>
 </form>
 
 ## 注意事項
