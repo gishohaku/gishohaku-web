@@ -25,6 +25,10 @@ const contents = css`
     font-weight: 600;
   }
 
+  h4 {
+    font-weight: 600;
+  }
+
   h2 + h3 {
     margin-top: 0;
   }
@@ -70,11 +74,41 @@ const contents = css`
   table tr th {
     white-space: nowrap;
   }
+
+  input[type="text"] {
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    width: 100%;
+  }
+
+  select {
+    appearance: none;
+    background: transparent url(/images/icon-down.svg) no-repeat center right
+      8px/16px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    width: 100%;
+  }
 `
 
 const Top = ({ markdownPage }) => (
   <Layout>
-    <SEO title={markdownPage.frontmatter.title} keywords={[`同人誌即売会`, `技術同人誌`, `技書博`]} />
+    <SEO
+      title={markdownPage.frontmatter.title}
+      keywords={[`同人誌即売会`, `技術同人誌`, `技書博`]}
+    />
     <section css={section}>
       <SectionHeader text={markdownPage.frontmatter.subtitle}>
         {markdownPage.frontmatter.title}
