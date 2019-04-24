@@ -12,7 +12,7 @@ subtitle: ENTRY
 
 以下のボタンより**必ず1度のみ**決済を行ってください。<br>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" accept-charset="UTF-8">
     <input type="hidden" name="cmd" value="_s-xclick">
     <input type="hidden" name="hosted_button_id" value="V3QFKMH7S45ZQ">
     <p>
