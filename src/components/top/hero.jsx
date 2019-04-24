@@ -166,9 +166,13 @@ const Hero = () => {
             transform: translateY(-1px);
             background-color: #dbae29;
           }
+          background-color: #aaaaaa;
+          &:hover {
+            background-color: #aaaaaa;
+          }
         `}
       >
-        サークル参加申し込み
+        サークル募集は締め切りました
       </a>
     </section>
   )
