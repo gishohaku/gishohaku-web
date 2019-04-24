@@ -74,7 +74,7 @@ const contents = css`
 
 const Top = ({ markdownPage }) => (
   <Layout>
-    <SEO title="利用規約" keywords={[`同人誌即売会`, `技術同人誌`, `技書博`]} />
+    <SEO title={markdownPage.frontmatter.title} keywords={[`同人誌即売会`, `技術同人誌`, `技書博`]} />
     <section css={section}>
       <SectionHeader text={markdownPage.frontmatter.subtitle}>
         {markdownPage.frontmatter.title}
