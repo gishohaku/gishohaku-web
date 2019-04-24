@@ -48,6 +48,6 @@ subtitle: ENTRY
 
 ## 運営団体
 
-- 運営者：[エンジニアの登壇を応援する会](https://portal.engineers.lt.info/)
+- 運営者：[エンジニアの登壇を応援する会](https://portal.engineers-lt.info/)
 - 代表者：森川晃
-- 問合先：gishohaku@engineers-lt.info
+- 問合先：[gishohaku@engineers-lt.info](mailto:gishohaku@engineers-lt.info)
