@@ -58,7 +58,6 @@ subtitle: CIRCLES
 - 土田ゲーム技研
 - テスターちゃん
 - kuluna.class
-- Auth屋
 - growthfaction
 - このづみ堂
 - 聖地会議
