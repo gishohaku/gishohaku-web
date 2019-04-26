@@ -7,6 +7,7 @@ import directionsIcon from "./round-directions_run.svg"
 import { media } from "src/utils/style"
 import SectionHeader from "../atoms/SectionHeader"
 import TextBlock from "../atoms/TextBlock"
+import SponsorLink from "../atoms/SponsorLink"
 
 const section = css`
   padding: 32px 0 48px;
@@ -40,40 +41,63 @@ const Sections = () => (
           たとえば、体験談や考察、開発効率をあげるテクニック、生存戦略や成長戦略の描き方など、あなたにしか書けないことを本にしてみませんか。
           誰もがカジュアルに知識を共有できる場所を提供することが私たちの目的です。
         </p>
-        <dl css={css`
-          margin-top: 24px;
-          dt, dd {
-            display:inline-block;
-            zoom:1;
-            vertical-align:top;
-            width: 50%;
-            padding: 12px 0;
-            margin:0;
-            border-top:1px solid #eee;
-          }
+        <SponsorLink
+          css={css`
+            margin: 32px 0;
+          `}
+        />
+        <dl
+          css={css`
+            margin-top: 24px;
+            dt,
+            dd {
+                display: inline-block;
+                zoom: 1;
+                vertical-align: top;
+                width: 50%;
+                padding: 12px 0;
+                margin: 0;
+                border-top: 1px solid #eee;
+            }
 
-          dt {
-            width: 112px;
-            color: #787878;
-            text-align: right;
-            padding-right: 24px;
-          }
+            dt {
+              width: 112px;
+              color: #787878;
+              text-align: right;
+              padding-right: 24px;
+            }
 
-          dd {
-            width: calc(100% - 112px);
-          }
-        `}>
+            dd {
+              width: calc(100% - 112px);
+            }
+          `}
+        >
           <dt>日時</dt>
           <dd>
-            2019.07.27(Sat.) 11:00-17:00<br/>
-            ※ サークル入場 10:00
+            2019.07.27(Sat.) 11:00-17:00
+            <br />※ サークル入場 10:00
           </dd>
           <dt>場所</dt>
           <dd>大田区産業プラザPiO</dd>
           <dt>Twitter</dt>
           <dd>
-            公式アカウント: <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/gishohaku">@gishohaku</a><br/>
-            ハッシュタグ: <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/hashtag/%E6%8A%80%E6%9B%B8%E5%8D%9A">#技書博</a>
+            公式アカウント:{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/gishohaku"
+            >
+              @gishohaku
+            </a>
+            <br />
+            ハッシュタグ:{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/hashtag/%E6%8A%80%E6%9B%B8%E5%8D%9A"
+            >
+              #技書博
+            </a>
           </dd>
         </dl>
       </TextBlock>
@@ -152,19 +176,21 @@ const Sections = () => (
         >
           <a href="/terms">サークル参加規約</a>
           を必ずご覧のうえ、お申し込みください。
-
-          </p>
-          <p
-            css={css`
-              text-align: center;
-              font-weight: bold;
-              @media ${media.small} {
-                text-align: left;
-              }
-            `}
-          >
-          サークル募集は締め切りました。多数の申し込みをいただきありがとうございました。<br/>
-          キャンセル枠の再募集は5月以降に<a href="https://twitter.com/gishohaku">公式Twitter</a>よりご案内させていただきます。
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          サークル募集は締め切りました。多数の申し込みをいただきありがとうございました。
+          <br />
+          キャンセル枠の再募集は5月以降に
+          <a href="https://twitter.com/gishohaku">公式Twitter</a>
+          よりご案内させていただきます。
         </p>
       </TextBlock>
       {/* <iframe

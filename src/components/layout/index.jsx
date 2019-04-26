@@ -12,10 +12,11 @@ import { Global, css } from "@emotion/core"
 
 import Header from "./header"
 import Footer from "./footer"
+import SponsorLink from "../atoms/SponsorLink"
 
 import "minireset.css"
 
-const Layout = ({ children, hideHeader }) => (
+const Layout = ({ children, hideHeader, hideSponsorLink }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,12 +31,18 @@ const Layout = ({ children, hideHeader }) => (
       <>
         <Global
           styles={css`
-            @import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700);
+            @import url(
+              https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,
+              700
+            );
             body {
               /* TODO: 諸々指定 */
               font-family: "Noto Sans JP";
               -webkit-font-smoothing: antialiased;
-              font-feature-settings : "palt";
+              font-feature-settings: "palt";
+              font-size: 15px;
+              line-height: 1.8;
+              color: #444;
             }
           `}
         />
@@ -45,9 +52,19 @@ const Layout = ({ children, hideHeader }) => (
             paddingTop: 0,
           }}
         >
-          { !hideHeader && <Header/> }
-          <main>{children}</main>
-          <Footer/>
+          {!hideHeader && <Header />}
+          <main>
+            {children}
+            {!hideSponsorLink && (
+              <SponsorLink
+                css={css`
+                  max-width: 740px;
+                  margin: 0 auto 32px;
+                `}
+              />
+            )}
+          </main>
+          <Footer />
         </div>
       </>
     )}
