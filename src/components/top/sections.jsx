@@ -169,17 +169,6 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
-            @media ${media.small} {
-              text-align: left;
-            }
-          `}
-        >
-          <a href="/terms">サークル参加規約</a>
-          を必ずご覧のうえ、お申し込みください。
-        </p>
-        <p
-          css={css`
-            text-align: center;
             font-weight: bold;
             @media ${media.small} {
               text-align: left;
@@ -187,12 +176,20 @@ const Sections = () => (
           `}
         >
           サークル募集は締め切りました。多数の申し込みをいただきありがとうございました。
-          <br />
-          参加サークル一覧は<a href="https://twitter.com/gishohaku">こちら</a>よりご覧いただけます。
-          <br />
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
           キャンセル枠の再募集は6月上旬ごろに
           <a href="https://twitter.com/gishohaku">公式Twitter</a>
           よりご案内させていただきます。
+          <br />
+          参加サークル一覧は<a href="https://twitter.com/gishohaku">こちら</a>よりご覧いただけます。
           <br />
           ※想定以上のサークル様に応募いただいており、再募集が行えない場合があります。何卒ご了承ください。
         </p>
