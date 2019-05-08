@@ -24,11 +24,23 @@ const Footer = () => (
       `}
     >
       <li>
-        <a href="https://portal.engineers-lt.info/">運営</a>
+        <a href="/terms">
+          サークル参加規約
+        </a>
+      </li>
+      <li>
+        <a href="/privacy">
+          プライバシーポリシー
+        </a>
       </li>
       <li>
         <a href="https://portal.engineers-lt.info/guideline">
-          コミュニティ・ガイドライン
+          コミュニティガイドライン
+        </a>
+      </li>
+      <li>
+        <a href="/law">
+          特定商取引法に基づく表記
         </a>
       </li>
       <li>
@@ -41,7 +53,7 @@ const Footer = () => (
         opacity: 0.8;
       `}
     >
-      © エンジニアの登壇を応援する会
+      © <a href="https://portal.engineers-lt.info/">エンジニアの登壇を応援する会</a>
     </p>
   </footer>
 )
