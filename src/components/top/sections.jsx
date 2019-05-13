@@ -363,6 +363,33 @@ const Sections = () => (
         />
       </TextBlock>
     </section>
+    <section id="entry" css={section}>
+      <SectionHeader text="PRINTING OFFICE">バックアップ印刷所</SectionHeader>
+      <TextBlock>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <a href="https://www.shippo.co.jp/">
+            <img src="https://www.shippo.co.jp/neko/img/neko_banner.gif" alt="ねこのしっぽ" css={css`
+              width: 200px;
+            `} />
+          </a>
+
+          <a href="http://www.nikko-pc.com/">
+            日光企画
+          </a>
+
+          <a href="http://www.inv.co.jp/~popls/">
+            ポプルス
+          </a>
+        </p>
+      </TextBlock>
+    </section>
   </>
 )
 
