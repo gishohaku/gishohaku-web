@@ -377,8 +377,9 @@ const Sections = () => (
           <div
             css={css`
               display: inline-block;
-              width: 220px;
+              width: 200px;
               height: 40px;
+              margin: 0px 16px;
               text-align: center;
               vertical-align: middle;
             `}
@@ -393,8 +394,9 @@ const Sections = () => (
           <div
             css={css`
               display: inline-block;
-              width: 220px;
+              width: 200px;
               height: 40px;
+              margin: 0px 16px;
               text-align: center;
               vertical-align: middle;
             `}
@@ -415,8 +417,9 @@ const Sections = () => (
           <div
             css={css`
               display: inline-block;
-              width: 220px;
+              width: 200px;
               height: 40px;
+              margin: 0px 16px;
               text-align: center;
               vertical-align: middle;
             `}
