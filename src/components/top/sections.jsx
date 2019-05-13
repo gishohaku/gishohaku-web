@@ -297,7 +297,11 @@ const Sections = () => (
             }
           `}
         >
-          <a href="https://www.mediado.jp/"><img src="/static/mediado.png" alt="株式会社メディアドゥ" /></a>
+          <a href="https://www.mediado.jp/">
+            <img src="/sponsors/mediado.png" alt="株式会社メディアドゥ" css={css`
+              width: 240px;
+            `} />
+          </a>
         </p>
 
         {/* 懇親会 */}
