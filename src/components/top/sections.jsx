@@ -374,6 +374,18 @@ const Sections = () => (
             }
           `}
         >
+          <div
+            css={css`
+              display: inline-block;
+              width: 220px;
+              height: 120px;
+              text-align: center;
+              vertical-align: middle;
+              @media ${media.small} {
+                text-align: left;
+              }
+            `}
+          >
           <a href="https://www.shippo.co.jp/">
             <img src="https://www.shippo.co.jp/neko/img/neko_banner.gif" alt="ねこのしっぽ" css={css`
               width: 200px;
