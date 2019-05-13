@@ -280,7 +280,7 @@ const Sections = () => (
           {/* 準備中 */}
         </p>
 
-        {/* デザイン */}
+        {/* オフィシャル */}
         <p
           css={css`
             text-align: center;
@@ -290,7 +290,7 @@ const Sections = () => (
             }
           `}
         >
-          デザイン協力
+          オフィシャルサポーター
         </p>
         <p
           css={css`
@@ -301,11 +301,7 @@ const Sections = () => (
             }
           `}
         >
-          <a href="https://www.mediado.jp/">
-            <img src="/sponsors/mediado.png" alt="株式会社メディアドゥ" css={css`
-              width: 240px;
-            `} />
-          </a>
+          {/* 準備中 */}
         </p>
 
         {/* 懇親会 */}
@@ -332,8 +328,7 @@ const Sections = () => (
           {/* 準備中 */}
         </p>
 
-
-        {/* 懇親会 */}
+        {/* デザイン */}
         <p
           css={css`
             text-align: center;
@@ -343,7 +338,7 @@ const Sections = () => (
             }
           `}
         >
-          オフィシャルサポーター
+          デザイン協力
         </p>
         <p
           css={css`
@@ -354,7 +349,11 @@ const Sections = () => (
             }
           `}
         >
-          {/* 準備中 */}
+          <a href="https://www.mediado.jp/">
+            <img src="/sponsors/mediado.png" alt="株式会社メディアドゥ" css={css`
+              width: 240px;
+            `} />
+          </a>
         </p>
 
         <SponsorLink
