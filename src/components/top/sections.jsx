@@ -364,7 +364,7 @@ const Sections = () => (
       </TextBlock>
     </section>
     <section id="entry" css={section}>
-      <SectionHeader text="PRINTING OFFICE">バックアップ印刷所</SectionHeader>
+      <SectionHeader text="PRINTING">バックアップ印刷所</SectionHeader>
       <TextBlock>
         <p
           css={css`
@@ -378,12 +378,9 @@ const Sections = () => (
             css={css`
               display: inline-block;
               width: 220px;
-              height: 120px;
+              height: 40px;
               text-align: center;
               vertical-align: middle;
-              @media ${media.small} {
-                text-align: left;
-              }
             `}
           >
             <a href="https://www.shippo.co.jp/">
@@ -397,15 +394,20 @@ const Sections = () => (
             css={css`
               display: inline-block;
               width: 220px;
-              height: 120px;
+              height: 40px;
               text-align: center;
               vertical-align: middle;
-              @media ${media.small} {
-                text-align: left;
-              }
             `}
           >
-            <a href="http://www.nikko-pc.com/">
+            <a href="http://www.nikko-pc.com/"
+              css={css`
+                border: 1px solid #ddd;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 auto;
+              `}
+            >
               日光企画
             </a>
           </div>
@@ -414,15 +416,20 @@ const Sections = () => (
             css={css`
               display: inline-block;
               width: 220px;
-              height: 120px;
+              height: 40px;
               text-align: center;
               vertical-align: middle;
-              @media ${media.small} {
-                text-align: left;
-              }
             `}
           >
-            <a href="http://www.inv.co.jp/~popls/">
+            <a href="http://www.inv.co.jp/~popls/"
+              css={css`
+                border: 1px solid #ddd;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 auto;
+              `}
+            >
               ポプルス
             </a>
           </div>
