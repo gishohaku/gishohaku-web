@@ -386,19 +386,46 @@ const Sections = () => (
               }
             `}
           >
-          <a href="https://www.shippo.co.jp/">
-            <img src="https://www.shippo.co.jp/neko/img/neko_banner.gif" alt="ねこのしっぽ" css={css`
-              width: 200px;
-            `} />
-          </a>
+            <a href="https://www.shippo.co.jp/">
+              <img src="https://www.shippo.co.jp/neko/img/neko_banner.gif" alt="ねこのしっぽ" css={css`
+                width: 200px;
+              `} />
+            </a>
+          </div>
 
-          <a href="http://www.nikko-pc.com/">
-            日光企画
-          </a>
+          <div
+            css={css`
+              display: inline-block;
+              width: 220px;
+              height: 120px;
+              text-align: center;
+              vertical-align: middle;
+              @media ${media.small} {
+                text-align: left;
+              }
+            `}
+          >
+            <a href="http://www.nikko-pc.com/">
+              日光企画
+            </a>
+          </div>
 
-          <a href="http://www.inv.co.jp/~popls/">
-            ポプルス
-          </a>
+          <div
+            css={css`
+              display: inline-block;
+              width: 220px;
+              height: 120px;
+              text-align: center;
+              vertical-align: middle;
+              @media ${media.small} {
+                text-align: left;
+              }
+            `}
+          >
+            <a href="http://www.inv.co.jp/~popls/">
+              ポプルス
+            </a>
+          </div>
         </p>
       </TextBlock>
     </section>
