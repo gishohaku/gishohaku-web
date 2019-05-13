@@ -41,11 +41,6 @@ const Sections = () => (
           たとえば、体験談や考察、開発効率をあげるテクニック、生存戦略や成長戦略の描き方など、あなたにしか書けないことを本にしてみませんか。
           誰もがカジュアルに知識を共有できる場所を提供することが私たちの目的です。
         </p>
-        <SponsorLink
-          css={css`
-            margin: 32px 0;
-          `}
-        />
         <dl
           css={css`
             margin-top: 24px;
@@ -209,6 +204,155 @@ const Sections = () => (
       >
         読み込んでいます...
       </iframe> */}
+    </section>
+    <section id="sponsor" css={section}>
+      <SectionHeader text="SPONSOR">スポンサー</SectionHeader>
+      <TextBlock>
+        {/* トートバッグ */}
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          トートバッグサポーター
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <!-- 準備中 -->
+        </p>
+
+        {/* パブリシティ */}
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          パブリシティサポーター
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <!-- 準備中 -->
+        </p>
+
+        {/* セキュリティ */}
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          セキュリティサポーター
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <!-- 準備中 -->
+        </p>
+
+        {/* デザイン */}
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          デザイン協力
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <a href="https://www.mediado.jp/"><img src="/static/mediado.png" alt="株式会社メディアドゥ" /></a>
+        </p>
+
+        {/* 懇親会 */}
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          懇親会サポーター
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <!-- 準備中 -->
+        </p>
+
+
+        {/* 懇親会 */}
+        <p
+          css={css`
+            text-align: center;
+            font-weight: bold;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          オフィシャルサポーター
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <!-- 準備中 -->
+        </p>
+
+        <SponsorLink
+          css={css`
+            margin: 32px 0;
+          `}
+        />
+      </TextBlock>
     </section>
   </>
 )
