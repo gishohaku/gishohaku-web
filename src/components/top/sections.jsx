@@ -223,6 +223,7 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
+            margin-bottom: 16px;
             @media ${media.small} {
               text-align: left;
             }
@@ -246,6 +247,7 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
+            margin-bottom: 16px;
             @media ${media.small} {
               text-align: left;
             }
@@ -269,6 +271,7 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
+            margin-bottom: 16px;
             @media ${media.small} {
               text-align: left;
             }
@@ -292,6 +295,7 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
+            margin-bottom: 16px;
             @media ${media.small} {
               text-align: left;
             }
@@ -319,6 +323,7 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
+            margin-bottom: 16px;
             @media ${media.small} {
               text-align: left;
             }
@@ -343,6 +348,7 @@ const Sections = () => (
         <p
           css={css`
             text-align: center;
+            margin-bottom: 16px;
             @media ${media.small} {
               text-align: left;
             }
