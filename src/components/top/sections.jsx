@@ -379,7 +379,7 @@ const Sections = () => (
               display: inline-block;
               width: 200px;
               height: 40px;
-              margin: 0px 16px;
+              margin: 16px 16px;
               text-align: center;
               vertical-align: middle;
             `}
@@ -396,7 +396,7 @@ const Sections = () => (
               display: inline-block;
               width: 200px;
               height: 40px;
-              margin: 0px 16px;
+              margin: 16px 16px;
               text-align: center;
               vertical-align: middle;
             `}
@@ -413,7 +413,7 @@ const Sections = () => (
               display: inline-block;
               width: 200px;
               height: 40px;
-              margin: 0px 16px;
+              margin: 16px 16px;
               text-align: center;
               vertical-align: middle;
             `}
@@ -445,7 +445,7 @@ const Sections = () => (
               display: inline-block;
               width: 70px;
               height: 40px;
-              margin: 0px 16px;
+              margin: 16px 16px;
               text-align: center;
               vertical-align: middle;
             `}
@@ -462,7 +462,7 @@ const Sections = () => (
               display: inline-block;
               width: 200px;
               height: 40px;
-              margin: 0px 16px;
+              margin: 16px 16px;
               text-align: center;
               vertical-align: middle;
             `}
