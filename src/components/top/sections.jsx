@@ -401,16 +401,10 @@ const Sections = () => (
               vertical-align: middle;
             `}
           >
-            <a href="http://www.nikko-pc.com/"
-              css={css`
-                border: 1px solid #ddd;
-                display: block;
-                height: 40px;
-                line-height: 40px;
-                margin: 0 auto;
-              `}
-            >
-              日光企画
+            <a href="http://www.nikko-pc.com/">
+              <img src="/images/nikkokikaku.png" alt="日光企画" css={css`
+                width: 200px;
+              `} />
             </a>
           </div>
 
@@ -434,6 +428,55 @@ const Sections = () => (
               `}
             >
               ポプルス
+            </a>
+          </div>
+
+        </p>
+        <p
+          css={css`
+            text-align: center;
+            @media ${media.small} {
+              text-align: left;
+            }
+          `}
+        >
+          <div
+            css={css`
+              display: inline-block;
+              width: 200px;
+              height: 40px;
+              margin: 0px 16px;
+              text-align: center;
+              vertical-align: middle;
+            `}
+          >
+            <a href="https://www.k-k9.jp/">
+              <img src="https://www.k-k9.jp/wp-content/themes/k9_20160801/img/logo.gif" alt="ケーナイン" css={css`
+                width: 200px;
+              `} />
+            </a>
+          </div>
+
+          <div
+            css={css`
+              display: inline-block;
+              width: 200px;
+              height: 40px;
+              margin: 0px 16px;
+              text-align: center;
+              vertical-align: middle;
+            `}
+          >
+            <a href="https://www.eikou.com/"
+              css={css`
+                border: 1px solid #ddd;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 auto;
+              `}
+            >
+              栄光
             </a>
           </div>
         </p>
