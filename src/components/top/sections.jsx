@@ -443,7 +443,7 @@ const Sections = () => (
           <div
             css={css`
               display: inline-block;
-              width: 200px;
+              width: 70px;
               height: 40px;
               margin: 0px 16px;
               text-align: center;
